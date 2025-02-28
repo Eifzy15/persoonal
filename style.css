@@ -1,0 +1,55 @@
+.container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.personal{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+    padding: 10px;
+    color: rgb(184, 184, 174);
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 30px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+color: rgb(194, 194, 188);
+}
+.hero-nav{
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+.started{
+    background-color: rgb(12, 187, 56);
+    padding: 3px 10px;
+    font-size: 2rem;
+    border-radius: 10px;
+    letter-spacing: 7px;
+    line-height: 10px;
+    color: rgb(26, 26, 24);
+    align-items: center;
+    justify-items: center;
+}
+.work{
+    color: rgb(150, 150, 144);
+}
+.letter{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 50px;
+    font-size: large;
+    letter-spacing: 2px;
+}
+.whatsapp{
+    border-radius: 10px;
+    background-color: rgb(10, 10, 10);
+}
+
+
