@@ -1,55 +1,130 @@
-.container{
-    background-color: black;
-    display: flex;
-    justify-content: center;
+.container {
+  background-color: black;
+  min-height: 100vh;
 }
-.personal{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 30px;
-    padding: 10px;
-    color: rgb(184, 184, 174);
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    line-height: 30px;
+body, html {
+  padding: 0;
+  margin: 0;
 }
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 70px;
-color: rgb(194, 194, 188);
+.personal {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 50px;
+  gap: 30px;
+  background-color: #1b1b1b;
+  text-wrap: nowrap;
+  height: 10vh;
+  color: rgb(184, 184, 174);
+  font-size: 14px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 30px;
 }
-.hero-nav{
-    line-height: 20px;
-    letter-spacing: 2px;
+.personal > div {
+  display: flex;
+  align-items: center;
 }
-.started{
-    background-color: rgb(12, 187, 56);
-    padding: 3px 10px;
-    font-size: 2rem;
-    border-radius: 10px;
-    letter-spacing: 7px;
-    line-height: 10px;
-    color: rgb(26, 26, 24);
-    align-items: center;
-    justify-items: center;
+.link {
+  gap: 50px;
 }
-.work{
-    color: rgb(150, 150, 144);
-}
-.letter{
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 50px;
-    font-size: large;
-    letter-spacing: 2px;
-}
-.whatsapp{
-    border-radius: 10px;
-    background-color: rgb(10, 10, 10);
+.icons {
+  gap: 20px;
 }
 
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+  color: rgb(194, 194, 188);
+  margin: 100px auto;
+}
+.name {
+  font-size: 3em;
+  line-height: 30px;
+  letter-spacing: 4px;
+}
+.hero-nav {
+  line-height: 30px;
+  letter-spacing: 2px;
+  max-width: 500px;
+}
+.image > img {
+  border-radius: 50%;
+  width: 400px;
+}
+.started {
+  background-color: rgb(95, 207, 30);
+  padding: 3px 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  letter-spacing: 3px;
+  line-height: 10px;
+  color: rgb(241, 241, 226);
+  align-items: center;
+  justify-items: center;
+  width: 60%;
+}
+.fa-greater-than {
+  font-size: 0.7em;
+}
+.work {
+  color: rgb(150, 150, 144);
+  margin: 100px auto;
+  width: 70%;
+}
+.letter {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 50px;
+  font-size: large;
+  letter-spacing: 2px;
+}
+.whatsapp {
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgb(10, 10, 10);
+  padding: 0 20px;
+}
+.mobile {
+  display: none !important;
+}
 
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 0 30px;
+  }
+  .mobile {
+    display: flex !important;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+  }
+  .link {
+    display: none !important;
+  }
+  .icons {
+    display: none !important;
+  }
+  .name {
+    font-size: 2.5em;
+  }
+  .started {
+    width: 70%;
+  }
+  .image > img {
+    width: 80vw;
+  }
+  .letter{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .personal{
+    width: auto;
+  }
+
+}
