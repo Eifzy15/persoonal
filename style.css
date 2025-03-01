@@ -114,7 +114,8 @@ body, html {
     font-size: 2.5em;
   }
   .started {
-    width: 70%;
+    width: 80%;
+    font-size: 1em;
   }
   .image > img {
     width: 80vw;
@@ -126,5 +127,8 @@ body, html {
   .personal{
     width: auto;
   }
-
+  .container{
+    margin: 0;
+    padding: 0;
+  }
 }
